@@ -174,7 +174,7 @@ const STATES = [
   { code: 'WA', name: 'Washington' }, { code: 'WV', name: 'West Virginia' },
   { code: 'WI', name: 'Wisconsin' }, { code: 'WY', name: 'Wyoming' },
 ];
-const BOARD_STATES = ['California', 'Texas', 'Michigan', 'Ohio', 'Maine', 'Georgia', 'North Carolina', 'Pennsylvania', 'New York', 'New Jersey', 'Florida', 'Virginia', 'Wisconsin', 'Arizona', 'Nevada'];
+const BOARD_STATES = ['California', 'Texas', 'Michigan', 'Ohio', 'Maine', 'Georgia', 'North Carolina', 'Pennsylvania', 'New York', 'New Jersey', 'Florida', 'Virginia', 'Wisconsin', 'Arizona', 'Nevada', 'Washington'];
 const TYPES = [
   { id: 'campaign', label: 'Campaign' },
   { id: 'ballot', label: 'Ballot Measure' },
@@ -1905,6 +1905,101 @@ const AGENCY_DB = [
     clients: 3, contact: '', url: '',
     notes: 'SOURCE: NV payee data ($87K). NV political communications.' },
 
+
+
+  // ===== WASHINGTON =====
+  // SOURCE: WA PDC Open Data API (data.wa.gov) - 36,992 Democratic payees, all years
+  // Merged case variants, filtered admin/payroll/utilities
+  { name: 'Argo Strategies', state: 'Washington', size: 'large', spec: 'digital',
+    clients: 30, contact: '', url: 'argo.us',
+    notes: 'SOURCE: WA PDC data (6,173 filings combined, $4.8M total). THE dominant WA multi-client digital firm. 400+ candidates and ballot measures across 12+ states. Won AAPC award for digital excellence. Works WA school bonds, levies, and candidate campaigns. Highest filing count of any WA consulting firm. MULTI-STATE: WA + 11 other states.' },
+  { name: 'Screen Strategies Media', state: 'Washington', size: 'large', spec: 'media',
+    clients: 20, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (617 filings, $13.6M total - top WA Dem media firm by dollars). WA Democratic media buying firm. Works statewide and legislative campaigns.' },
+  { name: 'Northwest Passage Consulting / NWP Consulting', state: 'Washington', size: 'large', spec: 'gc',
+    clients: 25, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (4,309 filings combined across variants, $11.2M total). MASSIVE multi-client WA consulting firm. Works WA legislative and local races at extraordinary volume. One of the highest-volume firms in the state.' },
+  { name: 'WinPower Strategies', state: 'Washington', size: 'large', spec: 'gc',
+    clients: 20, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (2,792 filings combined, $6.7M total). High-volume WA Dem consulting firm. Works candidate campaigns and legislative races statewide.' },
+  { name: 'Cerillion N4 Partners', state: 'Washington', size: 'large', spec: 'gc',
+    clients: 15, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (1,107 filings, $6.7M total). Major WA political consulting firm. Works WA legislative and statewide Dem campaigns.' },
+  { name: 'Shorr Johnson Magnus', state: 'Washington', size: 'large', spec: 'media',
+    clients: 12, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (186 filings, $10.1M total). Top WA Dem media firm. Works statewide and competitive legislative campaigns.' },
+  { name: 'Capitol City Press', state: 'Washington', size: 'large', spec: 'media',
+    clients: 20, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (1,999 filings combined, $4.8M total). WA political direct mail and printing. Very high multi-client volume.' },
+  { name: 'Blue Wave Political Partners', state: 'Washington', size: 'large', spec: 'gc',
+    clients: 20, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (2,041 filings combined, $2.5M total). High-volume WA Dem consulting. Works legislative and local races across the state.' },
+  { name: 'Katherine Bobman Consulting', state: 'Washington', size: 'large', spec: 'gc',
+    clients: 20, contact: 'Katherine Bobman', url: '',
+    notes: 'SOURCE: WA PDC data (1,674 filings combined, $2.5M total). Very high volume WA political consulting. Works WA House and Senate Dem campaigns across multiple cycles.' },
+  { name: 'Progressive Strategies NW', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 12, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (544 filings, $918K total). WA progressive consulting firm. Works legislative and ballot measure campaigns.' },
+  { name: 'Newman Partners', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 10, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (349 filings, $2.3M total). WA political consulting and strategy.' },
+  { name: 'Chinook Consulting', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 10, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (383 filings, $2.2M total). WA political consulting firm. Works Dem campaigns statewide.' },
+  { name: 'TR Strategies', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 8, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (309 filings, $1.76M total). WA political strategy firm.' },
+  { name: 'Moxie Media', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 10, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (1,378 filings combined, $3.6M total). WA political media firm. Very high client volume across WA legislative and local races.' },
+  { name: 'Upper Left Strategies', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 8, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (396 filings, $1.88M total). WA political consulting. "Upper Left" = progressive Pacific NW identity.' },
+  { name: 'Trilogy Interactive', state: 'Washington', size: 'medium', spec: 'digital',
+    clients: 8, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (242 filings, $1.19M total). WA digital political firm. Works Dem campaigns and progressive advocacy.' },
+  { name: 'AMS Communications', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 6, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (39 filings combined, $3.2M total). WA political communications and media firm.' },
+  { name: 'Okra Media', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 6, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (174 filings, $776K total). WA political media firm. Works Dem campaigns and ballot measures.' },
+  { name: 'CN4 Partners', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 6, contact: 'Dean Nielsen', url: 'cn4partners.com',
+    notes: 'SOURCE: WA PDC data (227 filings, $720K total). Also OH. Multi-state media firm. MULTI-STATE: WA · OH.' },
+  { name: 'Middle Seat Consulting', state: 'Washington', size: 'medium', spec: 'digital',
+    clients: 6, contact: '', url: 'middleseat.com',
+    notes: 'SOURCE: WA PDC data (107 filings, $853K total). Also AZ ($122K), VA ($203K). Dem digital firm. MULTI-STATE: WA · AZ · VA.' },
+  { name: 'Myers Research & Strategic Services', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 6, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (81 filings, $1.13M total). WA political polling and research firm.' },
+  { name: 'Counterpoint Messaging LLC', state: 'Washington', size: 'small', spec: 'digital',
+    clients: 3, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (24 filings, $567K total). WA digital messaging firm. Works Dem campaigns and progressive causes.' },
+  { name: 'Sage Media', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 5, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (17 filings, $619K total). WA political media buying.' },
+  { name: 'Mundy Katowitz Media', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 5, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (18 filings, $731K total). WA political media firm.' },
+  { name: 'Buying Time LLC', state: 'Washington', size: 'medium', spec: 'media',
+    clients: 5, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (34 filings, $616K). Also CA and PA. Multi-state media buying. MULTI-STATE: WA · CA · PA.' },
+  { name: 'Morel Ink', state: 'Washington', size: 'small', spec: 'media',
+    clients: 4, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (243 filings, $718K). WA political printing and direct mail. High client volume.' },
+  { name: 'Abbot Taylor', state: 'Washington', size: 'medium', spec: 'gc',
+    clients: 8, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (915 filings, $381K). Very high filing count. WA political consulting. Works dozens of WA legislative and local candidates per cycle.' },
+  { name: 'IS Political Inc / Integrated Solutions Political', state: 'Washington', size: 'medium', spec: 'digital',
+    clients: 8, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (2,085 filings combined, $371K total). Extremely high filing count -- works a huge volume of WA candidates. Voter contact and digital solutions.' },
+  { name: 'Complete Campaigns', state: 'Washington', size: 'medium', spec: 'digital',
+    clients: 10, contact: '', url: 'completecampaigns.com',
+    notes: 'SOURCE: WA PDC data (2,259 filings, $208K total). Campaign management software/services. Very high filing count across WA candidates. Worth a conversation about SMS integration.' },
+  { name: 'Blue Utopia', state: 'Washington', size: 'medium', spec: 'digital',
+    clients: 10, contact: '', url: '',
+    notes: 'SOURCE: WA PDC data (1,682 filings, $156K total). WA digital platform for Dem campaigns. Very high client count.' },
 ];
 
 
@@ -2005,7 +2100,7 @@ function renderAgencyPanel() {
         <div class="field" style="min-width:120px;flex:1;margin:0;"><label>State</label>
           <select id="ag-state">
             <option value="all" selected>All states</option>
-            ${['California','Texas','Ohio','Michigan','Maine','Georgia','North Carolina','Pennsylvania','New York','New Jersey','Florida','Virginia','Wisconsin','Arizona','Nevada'].map(s=>'<option value="'+s+'">'+s+'</option>').join('')}
+            ${['California','Texas','Ohio','Michigan','Maine','Georgia','North Carolina','Pennsylvania','New York','New Jersey','Florida','Virginia','Wisconsin','Arizona','Nevada','Washington'].map(s=>'<option value="'+s+'">'+s+'</option>').join('')}
           </select>
         </div>
         <div class="field" style="min-width:100px;flex:1;margin:0;"><label>Size</label>
